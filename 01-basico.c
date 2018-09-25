@@ -10,7 +10,7 @@
 int a;      //Tipo entero
 char b;     //Tipo caracter
 float c;    //Tipo real
-char d[10]; //Tipo string (limitación de 10)
+char d[10]; //Tipo string (limitación de 10) //Como el tipo de dato 'string' no existe de forma nativa en C, declaro un arreglo de tipo caracter para simularlo
 
 int main(){
     clear();
@@ -27,7 +27,7 @@ int main(){
     scanf("%f",&c); //Usamos %f para variables de tipo real
     printf("\n");
     printf("Para terminar, ingresa una cadena de caracteres: ");
-    scanf("%s",d);
+    scanf("%s",d);  //Las variables de tipo arreglo, no se utiliza el caracter '&'
     printf("\n");
     printf("Los valores ingresados fueron los siguientes:\n");
     printf("---------------------------------------------\n");
